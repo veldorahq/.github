@@ -1,10 +1,16 @@
+<p align="center">
+  <img src="./demo/banner.png" alt="Veldora Banner" width="100%">
+</p>
+
 <div align="center">
 
 # Veldora
 
-**A modern PHP framework with a built-in CMS, beautiful by default.**
+### Modern PHP Framework with a Built-in CMS
 
-Inspired by the developer experience of Laravel, the flexibility of modern PHP, and the design philosophy of shadcn/ui.
+Build modern PHP applications with a beautiful developer experience.
+
+Inspired by modern development practices and designed for developers who want full control without sacrificing simplicity.
 
 > **⚠️ Veldora is currently under active development and is not ready for production use.**
 
@@ -14,45 +20,100 @@ Inspired by the developer experience of Laravel, the flexibility of modern PHP, 
 
 ## ✨ Vision
 
-Veldora is an open-source PHP framework designed to provide a modern development experience while including features that usually require multiple third-party packages.
+Veldora is an open-source PHP framework built to provide a modern development experience while shipping with features that usually require multiple third-party packages.
 
-The goal is to build a framework where developers can create blogs, CMSs, dashboards, SaaS applications, APIs, and enterprise systems with minimal setup and maximum flexibility.
+The vision is simple:
+
+> **One framework. One ecosystem. Everything you need.**
+
+Whether you're building a blog, dashboard, SaaS platform, CMS, REST API, or enterprise application, Veldora aims to provide a clean, modern, and enjoyable development experience from day one.
 
 ---
 
 ## 🚀 Planned Features
 
-- Modern Routing
+### Core
+
+- Modern HTTP Kernel
+- Fast Router
 - Dependency Injection Container
-- Database ORM
-- Authentication & Authorization
-- Validation
-- Middleware
+- Configuration System
+- Middleware Pipeline
+- Request & Response
+- Exception Handler
+- Environment Manager
+
+### Database
+
+- Modern ORM
+- Query Builder
+- Migrations
+- Seeders
+- Factories
+- Relationships
+- Pagination
+- Transactions
+
+### Security
+
+- Authentication
+- Authorization
+- Roles & Permissions
+- Password Reset
+- Email Verification
+- CSRF Protection
+- Rate Limiting
+
+### Backend
+
 - Queue System
-- Cache System
 - Event System
+- Cache
 - File Storage
-- Mail Support
+- Mail
+- Scheduler
 - REST API
-- Plugin System
-- Theme Engine
-- Built-in CMS
-- Modern CLI
-- Beautiful Admin Dashboard
-- Component-Based UI System
-- Built-in SVG Icon Library
-- Dark Mode
-- First-Class Developer Experience
+- API Resources
+
+### CMS
+
+- Dashboard
+- Pages
+- Blog
+- Categories
+- Tags
+- Media Library
+- Menus
+- Theme Manager
+- Plugin Manager
+- User Management
+- Settings
+- SEO Tools
 
 ---
 
-## 🎨 UI Philosophy
+# 🎨 Beautiful by Default
 
-Veldora follows a philosophy inspired by **shadcn/ui**.
+Most PHP applications require additional packages before they look modern.
 
-Components belong to your project—not hidden inside vendor packages.
+Veldora aims to change that.
 
-Instead of locking you into packages, Veldora allows developers to generate and fully customize components.
+Every new project should feel polished from the very beginning.
+
+- Clean Interface
+- Responsive Layout
+- Dark Mode
+- Modern Components
+- Accessible UI
+- Professional Design
+
+---
+
+## 🧩 Component System
+
+Inspired by the philosophy of **shadcn/ui**.
+
+Components are generated directly into your project instead of being locked inside vendor packages.
 
 Example:
 
@@ -60,77 +121,198 @@ Example:
 veldora add button
 ```
 
-Creates:
+Creates
 
 ```text
 app/components/ui/Button.php
 ```
 
-Modify it however you like.
+You own the component.
 
-You own the code.
+Modify it.
+
+Extend it.
+
+Delete it.
+
+No vendor lock.
 
 ---
 
-## 📦 Built-in CMS
+## 🎯 Built-in CMS
 
-Unlike traditional PHP frameworks, Veldora aims to include a modern CMS out of the box.
+Unlike traditional PHP frameworks where you install multiple packages to get started, Veldora aims to include a complete CMS by default.
 
-Planned modules:
+Planned modules include:
 
 - Dashboard
 - Pages
+- Posts
 - Blog
-- Media Library
 - Users
-- Roles & Permissions
-- Theme Manager
-- Plugin Manager
+- Roles
+- Permissions
 - Settings
-- SEO Tools
+- Themes
+- Plugins
+- Media Manager
+- SEO
+
+---
+
+## 🎨 UI Library
+
+A modern component library built specifically for Veldora.
+
+Planned components:
+
+- Button
+- Input
+- Card
+- Table
+- Modal
+- Drawer
+- Dialog
+- Tabs
+- Dropdown
+- Navigation Menu
+- Sidebar
+- Command Palette
+- Toast
+- Calendar
+- Charts
+- Form Builder
+
+---
+
+## 🎭 Icon Library
+
+A built-in SVG icon library designed for consistency and performance.
+
+Simple.
+
+Lightweight.
+
+Easy to customize.
+
+---
+
+## 🖥️ CLI
+
+Developer experience matters.
+
+Example commands:
+
+```bash
+veldora new blog
+
+veldora serve
+
+veldora migrate
+
+veldora make controller
+
+veldora make model
+
+veldora make migration
+
+veldora add button
+
+veldora add modal
+
+veldora plugin install
+```
+
+---
+
+## 📂 Planned Project Structure
+
+```text
+app/
+bootstrap/
+config/
+database/
+docs/
+plugins/
+public/
+resources/
+routes/
+storage/
+tests/
+themes/
+```
 
 ---
 
 ## 💚 Why Veldora?
 
+- Modern architecture
+- Built-in CMS
 - Beautiful by default
+- Component-based UI
 - Developer-first experience
 - Highly customizable
-- Modern architecture
-- Open source
 - Minimal configuration
-- Built-in CMS
-- Modern UI components
-- Clean project structure
+- Open source
+- Clean codebase
+- Easy to extend
 
 ---
 
-## 📌 Project Status
+## 📸 Preview
 
-Veldora is currently in the planning and early development phase.
+<p align="center">
+    <img src="./demo/dashboard.png" width="95%" alt="Dashboard Preview">
+</p>
 
-Features, APIs, architecture, and folder structures may change before the first stable release.
+<p align="center">
+    <img src="./demo/cms.png" width="95%" alt="CMS Preview">
+</p>
+
+---
+
+## 📌 Roadmap
+
+- [ ] Core HTTP Engine
+- [ ] Dependency Injection
+- [ ] Routing
+- [ ] Configuration
+- [ ] Middleware
+- [ ] Template Engine
+- [ ] Component System
+- [ ] Database ORM
+- [ ] Authentication
+- [ ] CLI
+- [ ] Theme Engine
+- [ ] Plugin System
+- [ ] Built-in CMS
+- [ ] Documentation
+- [ ] First Stable Release (v1.0)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, ideas, discussions, feature requests, and bug reports are always welcome.
+Contributions are welcome.
 
-As the project grows, contribution guidelines and documentation will be added.
+Whether it's reporting bugs, suggesting features, improving documentation, or submitting pull requests, every contribution helps make Veldora better.
+
+Contribution guidelines will be added as development progresses.
 
 ---
 
 ## 📜 License
 
-This project will be released under the **MIT License**.
+Licensed under the **MIT License**.
 
 ---
 
 <div align="center">
 
-### Build modern PHP applications with confidence.
+## 🌟 Veldora
 
-**Made with ❤️ for the PHP community.**
+**Modern PHP. Beautiful by Default.**
+
+Made with ❤️ for the PHP community.
 
 </div>
